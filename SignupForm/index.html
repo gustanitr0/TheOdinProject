@@ -1,75 +1,94 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Sign-up Form</title>
+  <meta charset="UTF-8">
+  <title>Sign Up Form</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="structure">
-        <section id="card">
-            <div id="card-container">
-                <div id="card-image">
-                    <img src="images/halie-west-25xggax4bSA-unsplash.jpg" alt="">
-                </div>
-                
-                <div id="card-body">
-                    <h1 id="card-heading">ODIN</h1>
-                </div>
-            </div>
-        </section>
 
-        <section id="form">
-            <h1>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
-                Sign-up <i>now</i> to get started.
-            </h1>
+<div class="container">
 
-            <h2>You <i>know</i> you want to.</h2>
+  <!-- left side with background image -->
+  <aside class="sidebar">
 
-            <h3>Let's do this!</h2>
-
-            <form action="">
-                <div class="form-group">
-
-                    <div class="input-wrapper">
-                        <label for="first_name">First Name</label>
-                        <input type="text" name="first_name" id="first_name" placeholder="Giussepe" required>
-                    </div>
-
-                    <div class="input-wrapper">
-                        <label for="last_name">Last Name</label>
-                        <input type="text" name="last_name" id="last_name" placeholder="Cadura" >
-                    </div>
-
-                    <div class="input-wrapper">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="JosePicadura@gmail.com" required>
-                    </div>
-
-                    <div class="input-wrapper">
-                        <label for="phone_number">Phone Number</label>
-                        <input type="number" name="phone_number" id="phone_number" placeholder="123456789">
-                    </div>
-
-                    <div class="input-wrapper">
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password" required minlength="3">
-                    </div>
-
-                    <div class="input-wrapper">
-                        <label for="password">Confirm Password</label>
-                        <input type="password" name="password" id="password" required minlength="3">
-                    </div>
-
-
-                    <button type="submit">Create Account</button>
-                    <p>Already have an account? <a href="blank">Log in</a></p>
-
-                </div>
-            </form>
-        </section>
-
+    <!-- logo bar -->
+    <div class="logo-box">
+      <span>ODIN</span>
     </div>
+
+    <!-- image credit -->
+    <p class="credit">Photo by Halie West on Unsplash</p>
+
+  </aside>
+
+  <!-- right side -->
+  <main class="main">
+
+    <!-- intro text -->
+    <section class="intro">
+      <p>
+        This is not a real online service! You know you need something like this
+        in your life to help you realize your deepest dreams.
+      </p>
+      <p><strong>Sign up now</strong> to get started.</p>
+      <p>You know you want to.</p>
+    </section>
+
+    <!-- form starts -->
+    <form>
+
+      <!-- form card -->
+      <section class="form-box">
+        <h2>Let's do this!</h2>
+
+        <!-- grid -->
+        <div class="form-grid">
+
+          <label class="form-group">
+            FIRST NAME
+            <input type="text" placeholder="Thor">
+          </label>
+
+          <label class="form-group">
+            LAST NAME
+            <input type="text" placeholder="Odinson">
+          </label>
+
+          <label class="form-group">
+            EMAIL
+            <input type="email">
+          </label>
+
+          <label class="form-group">
+            PHONE NUMBER
+            <input type="tel">
+          </label>
+
+          <label class="form-group">
+            PASSWORD
+            <input type="password" required>
+          </label>
+
+          <label class="form-group">
+            CONFIRM PASSWORD
+            <input type="password" required>
+          </label>
+
+        </div>
+      </section>
+
+      <!-- button section -->
+      <section class="bottom">
+        <button type="submit">Create Account</button>
+        <p>Already have an account? <span>Log in</span></p>
+      </section>
+
+    </form>
+
+  </main>
+
+</div>
+
 </body>
 </html>
